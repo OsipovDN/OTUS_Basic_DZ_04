@@ -21,11 +21,11 @@ class Parser {
   private:
     void next_token();
 
-    ASTNode *expr();
+    ASTNode *expr();        //Метод разбора выражения
 
-    ASTNode *term();
+    ASTNode *term();        //Метод считывания первого слагаемого
 
-    ASTNode *prim();
+    ASTNode *prim();        //Метод определния (число или имя переменной)
 
     Lexer &lexer_;
     Lexer::Token tok_;
