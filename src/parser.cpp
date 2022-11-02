@@ -1,6 +1,7 @@
 #include "parser.hpp"
 #include "number.hpp"
 #include "variable.hpp"
+#include "multiplication.hpp"
 
 using Token = Lexer::Token;
 
