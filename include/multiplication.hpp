@@ -3,10 +3,11 @@
 #include <string>
 #include "astnode.hpp"
 
-class Mul {
+class Mul: public ASTNode {
 public:
     Mul(int lval, int rval)
-        : lhs_(lval),rhs_(rval) {}
+        :ASTNode('*', lval, rval),
+        lhs_(lval),rhs_(rval) {}
 
     int lvalue() const { return lhs_; }
     int rvalue() const { return rhs_; }

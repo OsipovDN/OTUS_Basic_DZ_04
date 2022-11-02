@@ -21,6 +21,7 @@ class Lexer {
     explicit Lexer(std::istream &in);   //Конструктор лексера принимающий в качестве аргумента входной поток символов
     Lexer(const Lexer &other) = delete;
     Lexer &operator=(const Lexer &other) = delete;
+
     Token next_token();
     int get_number() const { return number_; }
     std::string get_operator() const { return operator_; }
