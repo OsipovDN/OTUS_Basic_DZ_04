@@ -2,6 +2,9 @@
 #include "number.hpp"
 #include "variable.hpp"
 #include "multiplication.hpp"
+#include "division.hpp"
+#include "subtraction.hpp"
+#include "addition.hpp"
 
 using Token = Lexer::Token;
 
@@ -19,13 +22,13 @@ ASTNode *Parser::expr() {
             switch (op.front()) {
             case '+':
                 // Implement Add class and uncomment this line
-                // root = new Add(root, term());
-                return nullptr;
+                root = new Add(root, term());
+                //return nullptr;
                 break;
             case '-':
                 // Implement Sub class and uncomment this line
-                //root = new Sub(root, term());
-                return nullptr;
+                root = new Sub(root, term());
+                //return nullptr;
                 break;
             default:
                 return root;
@@ -48,13 +51,13 @@ ASTNode *Parser::term() {
             switch (op.front()) {
             case '*':
                 // Implement Mul class and uncomment this line
-                // root = new Mul(root, prim());
-                return nullptr;
+                root = new Mul(root, prim());
+                //return nullptr;
                 break;
             case '/':
                 // Implement Div class and uncomment this line
-                //root = new Div(root, prim());
-                return nullptr;
+                root = new Div(root, prim());
+                //return nullptr;
                 break;
             default:
                 return root;
