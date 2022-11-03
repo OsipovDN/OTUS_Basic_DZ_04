@@ -9,7 +9,7 @@ add_executable(calc
     src/lexer.cpp
     src/main.cpp
     src/parser.cpp
-   )
+    )
 
 
 target_include_directories(calc PRIVATE include)
