@@ -7,11 +7,10 @@
 class Variable : public ASTNode {
 public:
     Variable(std::string name)
-        : ASTNode(name)
-        , name_(name) {}
+        : ASTNode(name){}
 
-    std::string name() const { return name_; }
+    Variable(const Variable& other) = delete;
+    Variable& operator=(const Variable& other) = delete;
+    ~Variable() = default;
 
-private:
-    std::string name_;
 };

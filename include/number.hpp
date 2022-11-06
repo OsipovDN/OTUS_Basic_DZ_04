@@ -9,6 +9,10 @@ class Number : public ASTNode {
         : ASTNode(std::to_string(val))
         , val_(val) {}
 
+    Number(const Number& other) = delete;
+    Number& operator=(const Number& other) = delete;
+    ~Number() = default;
+
     int value() const { return val_; }
 
   private:
