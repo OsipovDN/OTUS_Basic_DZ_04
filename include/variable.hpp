@@ -6,7 +6,7 @@
 
 class Variable : public ASTNode {
 public:
-    Variable(std::string name)
+    Variable(const std::string &name)
         : ASTNode(name){}
 
 };
