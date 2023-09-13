@@ -1,6 +1,6 @@
 # Домашнее задание 4 
 ## “Инженерный калькулятор”
-<div dir="rtl"> If you lie to a compiler, it will get its revenge Henry Spencer </div>
+><div dir="rtl"> If you lie to a compiler, it will get its revenge Henry Spencer </div>
 
 &emsp;&emsp;Как задача “Hello, world” служит отличным примером для первого ознакомления с
 языком и инструментами сборки, так задача по разбору арифметического выражения
